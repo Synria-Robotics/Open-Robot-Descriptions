@@ -11,7 +11,7 @@ def find_data_files(package_dir, data_dirs):
                 data_files.append(os.path.join(root, f).replace(package_dir + os.sep, ''))
     return data_files
 
-package_name = 'robot_descriptions'
+package_name = 'openrd'
 if not os.path.exists(package_name):
     os.makedirs(package_name)
 if not os.path.exists(os.path.join(package_name, '__init__.py')):
@@ -26,10 +26,10 @@ setup(
     version="1.0.0",
     author="Synria Robotics",
     author_email="support@synriarobotics.ai",
-    description="URDF and MJCF robot description files for Synria robotic platforms.",
+    description="URDF and MJCF robot description files for open source robot platforms.",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/Synria-Robotics/Synria-robot-descriptions",
+    url="https://github.com/Synria-Robotics/Open-robot-descriptions",
     # Find the dummy package we created
     packages=find_packages(),
     # Tell setuptools to include the non-Python files
