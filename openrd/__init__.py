@@ -219,7 +219,7 @@ def list_available_models(model_format="urdf", show_path=False):
                             variant_lower in name_parts or
                             (version and variant_attr == f"{name}_{version}")):
                             variant = None
-                        # Check if it looks like a version number (e.g., bruce_20250220 contains date)
+                        # Check if it looks like a version number (e.g., bruce contains date)
                         elif '_' in variant_attr and any(char.isdigit() for char in variant_attr):
                             # This might be a version-like variant, but we'll treat it as variant
                             variant = variant_attr

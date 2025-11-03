@@ -34,7 +34,7 @@ def extract_object_name(file_path: Path, robot_dir_name: str) -> str:
     Extract object name from file path.
     
     For example:
-    - bruce/bruce_20250220.xml -> bruce_20250220
+    - bruce/bruce.xml -> bruce
     - unitree_g1/g1.xml -> g1
     - fourier_gr3/gr3.xml -> gr3
     - smpl/smpl_humanoid.xml -> smpl_humanoid
@@ -45,7 +45,7 @@ def extract_object_name(file_path: Path, robot_dir_name: str) -> str:
     if stem == robot_dir_name:
         return stem
     
-    # Handle cases like bruce_20250220 (where dir is bruce)
+    # Handle cases like bruce (where dir is bruce)
     # Or gr3 (where dir is fourier_gr3)
     if robot_dir_name in stem:
         return stem
