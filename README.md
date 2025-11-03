@@ -48,6 +48,27 @@ print(list_available_models(model_format="urdf"))
 print(list_available_models(model_format="mjcf", show_path=True))
 ```
 
+## 添加新机器人模型
+
+添加新机器人模型后，运行自动化脚本自动生成所需的 `__init__.py` 文件：
+
+```bash
+# 1. 添加模型文件到对应目录
+mkdir -p openrd/mjcf/my_robot
+cp my_robot.xml openrd/mjcf/my_robot/
+
+# 2. 运行自动化脚本
+python3 auto_generate_init.py
+
+# 脚本会自动：
+# - 生成每个机器人目录的 __init__.py
+# - 更新父目录的 __init__.py 注册所有机器人
+```
+
+脚本选项：
+- `--format mjcf|urdf|all`: 指定处理的格式（默认：all）
+- `--openrd-path PATH`: 指定 openrd 目录路径（默认：自动检测）
+
 ## 支持的仿真环境
 
 - **SparkVis (通过 URDF、MJCF) - Synria Robotics 自研的统一机器人可视化交互控制软件**

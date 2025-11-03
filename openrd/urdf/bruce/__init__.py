@@ -6,5 +6,3 @@ _MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 bruce = SimpleNamespace()
 bruce.urdf = os.path.join(_MODULE_PATH, "bruce.urdf")
-
-

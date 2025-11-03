@@ -28,7 +28,7 @@
     <mesh name="right_hip_pitch_link" file="right_hip_pitch_link.STL" />
     <mesh name="right_knee_link" file="right_knee_link.STL" />
     <mesh name="right_ankle_link" file="right_ankle_link.STL" />
-    <mesh name="torso_link" file="../../urdf/unitree_h1/meshes/torso_link.STL" />
+    <mesh name="torso_link" file="torso_link.STL" />
     <mesh name="left_shoulder_pitch_link" file="left_shoulder_pitch_link.STL" />
     <mesh name="left_shoulder_roll_link" file="left_shoulder_roll_link.STL" />
     <mesh name="left_shoulder_yaw_link" file="left_shoulder_yaw_link.STL" />

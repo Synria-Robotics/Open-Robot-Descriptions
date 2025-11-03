@@ -19,6 +19,9 @@ smpl_1_humanoid.xml = os.path.join(_MODULE_PATH, "smpl_1_humanoid.xml")
 smpl_2_humanoid = SimpleNamespace()
 smpl_2_humanoid.xml = os.path.join(_MODULE_PATH, "smpl_2_humanoid.xml")
 
+smpl_humanoid = SimpleNamespace()
+smpl_humanoid.xml = os.path.join(_MODULE_PATH, "smpl_humanoid.xml")
+
 smpl_humanoid_0 = SimpleNamespace()
 smpl_humanoid_0.xml = os.path.join(_MODULE_PATH, "smpl_humanoid_0.xml")
 
@@ -28,16 +31,11 @@ smpl_humanoid_1.xml = os.path.join(_MODULE_PATH, "smpl_humanoid_1.xml")
 smpl_humanoid_xyz = SimpleNamespace()
 smpl_humanoid_xyz.xml = os.path.join(_MODULE_PATH, "smpl_humanoid_xyz.xml")
 
-smpl_humanoid = SimpleNamespace()
-smpl_humanoid.xml = os.path.join(_MODULE_PATH, "smpl_humanoid.xml")
+smplh_humanoid = SimpleNamespace()
+smplh_humanoid.xml = os.path.join(_MODULE_PATH, "smplh_humanoid.xml")
 
 smplh_humanoid_xyz = SimpleNamespace()
 smplh_humanoid_xyz.xml = os.path.join(_MODULE_PATH, "smplh_humanoid_xyz.xml")
 
-smplh_humanoid = SimpleNamespace()
-smplh_humanoid.xml = os.path.join(_MODULE_PATH, "smplh_humanoid.xml")
-
 smplx_capsule = SimpleNamespace()
 smplx_capsule.xml = os.path.join(_MODULE_PATH, "smplx_capsule.xml")
-
-
