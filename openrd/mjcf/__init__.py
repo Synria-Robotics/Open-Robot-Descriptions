@@ -2,6 +2,7 @@
 from . import bruce
 from . import fourier_gr3
 from . import rewr1_1
+from . import robotera_l3
 from . import smpl
 from . import tienkung_1
 from . import unitree_g1
@@ -11,6 +12,7 @@ __all__ = [
     "bruce",
     "fourier_gr3",
     "rewr1_1",
+    "robotera_l3",
     "smpl",
     "tienkung_1",
     "unitree_g1",
