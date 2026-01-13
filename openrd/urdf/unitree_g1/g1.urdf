@@ -1,4 +1,7 @@
 <robot name="g1">
+  <mujoco>
+    <compiler meshdir="../../meshes/unitree_g1/" balanceinertia="true"  discardvisual="false" />
+  </mujoco>
 
   <link name="pelvis">
     <inertial>
