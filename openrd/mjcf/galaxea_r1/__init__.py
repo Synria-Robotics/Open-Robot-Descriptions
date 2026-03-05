@@ -4,6 +4,6 @@ from types import SimpleNamespace
 # Get the absolute path to THIS directory
 _MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
 
-r1_pro = SimpleNamespace()
-r1_pro.xml = os.path.join(_MODULE_PATH, "r1_pro.xml")
+galaxea_r1 = SimpleNamespace()
+galaxea_r1.xml = os.path.join(_MODULE_PATH, "galaxea_r1.xml")
 

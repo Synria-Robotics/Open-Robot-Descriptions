@@ -1,4 +1,4 @@
-<mujoco model="r1_pro">
+<mujoco model="galaxea_r1">
   <compiler angle="radian" meshdir="../../meshes/galaxea_r1/"/>
 
   
