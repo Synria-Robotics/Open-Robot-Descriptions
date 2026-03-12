@@ -97,7 +97,7 @@ def get_model_path(name, version=None, variant=None, model_format="urdf"):
     # Map model format to actual attribute name (mjcf uses 'xml')
     format_attr = 'xml' if model_format == 'mjcf' else model_format
     
-    # If variant_obj is the module itself, try to find an object with the format attribute
+
     if variant_obj == version_module:
         # Look for objects in the module that have the format attribute
         excluded_attrs = {'os', 'SimpleNamespace', 'types', 'abspath', 'dirname', 'join', '__builtins__',
@@ -106,7 +106,13 @@ def get_model_path(name, version=None, variant=None, model_format="urdf"):
                         if not attr.startswith('_') and attr not in excluded_attrs]
         
         found_obj = None
-        for attr in variant_attrs:
+        preferred_attrs = []
+        for candidate in (version_module_name, name):
+            if candidate and candidate in variant_attrs and candidate not in preferred_attrs:
+                preferred_attrs.append(candidate)
+
+        search_attrs = preferred_attrs + [attr for attr in variant_attrs if attr not in preferred_attrs]
+        for attr in search_attrs:
             try:
                 obj = getattr(version_module, attr)
                 if not isinstance(obj, type) and hasattr(obj, format_attr):
