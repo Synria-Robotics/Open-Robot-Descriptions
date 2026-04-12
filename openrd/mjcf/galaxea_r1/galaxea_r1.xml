@@ -108,17 +108,17 @@
       </body>
       <body name="torso_link1" pos="-0.079032 0 0.34865">
         <inertial pos="0.00065636 0.0032244 0.23142" quat="0.999998 0.000695924 0.000862045 0.00193552" mass="5.72" diaginertia="0.10931 0.10736 0.00812171"/>
-        <joint name="torso_joint1" pos="0 0 0" axis="0 1 0" range="-1.1345 1.8326" actuatorfrcrange="-100 100"/>
+        <joint name="torso_joint1" pos="0 0 0" axis="0 1 0" range="-0.1 0.1" actuatorfrcrange="-100 100"/>
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.82353 0.82353 1 1" mesh="torso_link1"/>
         <geom type="mesh" rgba="0.82353 0.82353 1 1" mesh="torso_link1"/>
         <body name="torso_link2" pos="0 0 0.4">
           <inertial pos="0.0052517 0.014411 0.15711" quat="0.707019 -0.00357502 -0.00358594 0.707176" mass="3.5" diaginertia="0.027574 0.0260835 0.00184901"/>
-          <joint name="torso_joint2" pos="0 0 0" axis="0 1 0" range="-2.7925 0" actuatorfrcrange="-100 100"/>
+          <joint name="torso_joint2" pos="0 0 0" axis="0 1 0" range="-0.1 0" actuatorfrcrange="-100 100"/>
           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.82353 0.82353 1 1" mesh="torso_link2"/>
           <geom type="mesh" rgba="0.82353 0.82353 1 1" mesh="torso_link2"/>
           <body name="torso_link3" pos="0 0.0001005 0.3">
             <inertial pos="-9.8337e-07 -0.0055146 0.020182" quat="0.493716 0.506467 0.494804 0.504882" mass="3.4" diaginertia="0.00230141 0.00170239 0.0016099"/>
-            <joint name="torso_joint3" pos="0 0 0" axis="0 -1 0" range="-1.8326 1.5708" actuatorfrcrange="-100 100"/>
+            <joint name="torso_joint3" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" actuatorfrcrange="-100 100"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.82353 0.82353 1 1" mesh="torso_link3"/>
             <geom type="mesh" rgba="0.82353 0.82353 1 1" mesh="torso_link3"/>
             <body name="torso_link4" pos="0 -0.00010015 0.09962">
